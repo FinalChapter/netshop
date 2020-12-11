@@ -1,0 +1,153 @@
+/* .main >img{
+ height: 640px;
+} */
+.main{
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    background-color: #1Ac1FF; 
+    position: relative;
+}
+ .main >img{
+
+  height: 640px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+.head{
+   height: 70px; 
+}
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+.head-center{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.head-img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.head-img>img{
+    height: 100%;
+    margin-right: 19px;
+}
+.head-img > .line{
+    width: 1px;
+    height: 20px;
+    background-color: #dadada;
+}
+.head-info , .head-info>ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.head-info>ul>li{
+    margin-left: 32px;
+}
+.head-info>ul>li:hover{
+  color: #00C89F;
+}
+.main-center{
+    position: relative;
+    height: 100%;
+}
+.loginBox{
+    width: 372px;
+    height: 372px;
+    border-radius: 4px;
+    padding: 32px 0px 0;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.loginBox>h3{
+    padding:0 32px;
+    font-size: 20px;
+    height: 28px;
+    color: #333;
+    font-weight: 500;
+     margin-top: 0;  
+     margin-bottom: 30px;
+}
+.login> .input-item{
+  margin-bottom: 20px;
+}
+ .input-item > input{
+     width: 100%;
+     border: 1px solid #ddd;
+     padding: 10px; 
+     outline: none;
+ }
+ .error-change{
+     color: red;
+     border-color: red;
+ }
+ .login{
+    padding:0 32px;
+ }
+.login >button{
+    width: 100%;
+    height:42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    background-color: #00c6a5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    
+}
+.login> .forget{
+    font-size: 14px;
+    display: block;
+    height: 21px;
+    margin-bottom: 20px;
+}
+.box-bottom{
+    height: 65px;
+    background-color: #f7f8f8;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+.box-bottom >span{
+  color:#00c89f;
+}
+.foot >.foot-main{
+    padding: 40px 0;
+    text-align: center;
+}
+.foot >.foot-main >p{
+   display: flex;
+   font-size: 12px;
+   line-height: 24px;
+   margin-bottom: 0;
+   justify-content: center;
+ }
+ .foot >.foot-main >p >img{
+     width: 20px;
+     height: 20px;
+ }
+ .foot >.foot-main >p:nth-of-type(2){
+     color: #999
+ }
+#username-error , #password-error{
+    color: red;
+}
+input:focus{
+    border-color: #00c89f;
+}
+input.error{
+    border-color: red;
+}
